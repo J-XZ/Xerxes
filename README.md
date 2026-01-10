@@ -120,6 +120,7 @@ bash AE-scripts/fig12.sh # Generates results for Figure 12 (cf. output/fig12)
 After running the test scripts, use the plotting scripts in the `output` folder to generate the figures:
 ```bash
 cd Xerxes # ensure in the repository root
+python3 output/plot_fig10.py # Generates Figure 10, saving the image to output/fig10/fig10.png
 python3 output/plot_fig11.py # Generates Figure 11, saving the image to output/fig11/fig11.png
 python3 output/plot_fig12.py # Generates Figure 12, saving the image to output/fig12/fig12.png
 ```
