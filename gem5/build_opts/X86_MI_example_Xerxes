@@ -1,0 +1,5 @@
+RUBY=y
+PROTOCOL="MI_example_Xerxes"
+RUBY_PROTOCOL_MI_example_Xerxes=y
+BUILD_ISA=y
+USE_X86_ISA=y

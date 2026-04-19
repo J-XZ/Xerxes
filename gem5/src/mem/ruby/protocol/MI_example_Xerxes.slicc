@@ -1,0 +1,5 @@
+protocol "MI_example_Xerxes";
+include "MI_example_Xerxes-msg.sm";
+include "MI_example_Xerxes-cache.sm";
+include "MI_example_Xerxes-dir.sm";
+include "MI_example_Xerxes-dma.sm";

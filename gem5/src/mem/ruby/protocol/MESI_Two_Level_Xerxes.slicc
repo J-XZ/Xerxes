@@ -1,0 +1,6 @@
+protocol "MESI_Two_Level_Xerxes" use_secondary_load_linked;
+include "MESI_Two_Level_Xerxes-msg.sm";
+include "MESI_Two_Level_Xerxes-L1cache.sm";
+include "MESI_Two_Level_Xerxes-L2cache.sm";
+include "MESI_Two_Level_Xerxes-dir.sm";
+include "MESI_Two_Level_Xerxes-dma.sm";
