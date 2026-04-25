@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# 功能：检查当前 Xerxes 分支与 upstream 分支之间的差异，辅助同步上游更新。
+# 适合在准备 rebase、merge 或评估落后提交时使用。
 set -euo pipefail
 
 repo_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"

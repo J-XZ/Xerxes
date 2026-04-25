@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# 功能：将 Xerxes 维护的 gem5 overlay 文件复制到 third_party/gem5。
+# 同时创建 ext/xerxes 符号链接，供 gem5 构建时引用 Xerxes 本体代码。
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -42,4 +44,3 @@ ln -s ../../.. "${GEM5_DIR}/ext/xerxes"
 
 echo "Applied Xerxes gem5 overlay to ${GEM5_DIR}"
 echo "Linked ${GEM5_DIR}/ext/xerxes -> ../../.."
-

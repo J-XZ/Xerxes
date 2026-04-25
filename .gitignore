@@ -1,9 +1,30 @@
-# TGT
+# Build directories
 build/
 debug/
+debug_build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+Makefile
+compile_commands.json
 
-
+# Local caches
 .cache/
-configs/mkcfg/__pycache__/
+.ccache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
 
+# Runtime and simulation outputs
+m5out/
+stats.txt
+config.ini
+config.json
+*.log
+*.out
+
+# Generated evaluation figures
 output/fig*/

@@ -1,8 +1,29 @@
 #!/bin/bash
 
+CC_BIN="/usr/bin/clang-18"
+CXX_BIN="/usr/bin/clang++-18"
+
+if [ ! -x "${CC_BIN}" ]; then
+	echo "ERROR: C compiler not found: ${CC_BIN}" >&2
+	exit 1
+fi
+
+if [ ! -x "${CXX_BIN}" ]; then
+	echo "ERROR: C++ compiler not found: ${CXX_BIN}" >&2
+	exit 1
+fi
+
 mkdir -p output
 mkdir -p build
 mkdir -p debug
 
-cmake -S . -B debug -DCMAKE_BUILD_TYPE=Debug
-cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=True
+cmake -S . -B debug \
+	-DCMAKE_BUILD_TYPE=Debug \
+	-DCMAKE_C_COMPILER="${CC_BIN}" \
+	-DCMAKE_CXX_COMPILER="${CXX_BIN}"
+
+cmake -S . -B build \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_C_COMPILER="${CC_BIN}" \
+	-DCMAKE_CXX_COMPILER="${CXX_BIN}" \
+	-DCMAKE_EXPORT_COMPILE_COMMANDS=True

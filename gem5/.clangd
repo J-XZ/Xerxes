@@ -1,0 +1,30 @@
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -DMAGIC_ENUM_RANGE_MAX=0x100
+    - -DNUMBER_BITS_PER_SET=128
+    - -DTRACING_ON=1
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/gem5/src
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/src
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/include
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/libfdt
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/drampower/src
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/nomali/include
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/softfloat
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/libelf
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/fputils/include
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/iostream3
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/pybind11/include
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/googletest/googletest/include
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/ext/googletest/googlemock/include
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/build/X86_MESI_Two_Level_Xerxes
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/src/systemc/ext/systemc_home/include
+    - -I/root/code/cxlkv/CXL_BETTER_SIM/Xerxes/third_party/gem5/build/X86_MESI_Two_Level_Xerxes/systemc/ext
+    - -I/usr/include/python3.10
+    - -Wall
+    - -Wextra
+    - -Wno-sign-compare
+    - -Wno-unused-parameter
+  Remove:
+    - -Werror
